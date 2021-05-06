@@ -1,0 +1,13 @@
+apiVersion: apiextensions.kirago.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: foos.samplecontroller.kirago.io
+spec:
+  group: samplecontroller.kirago.io
+  version: v1alpha1
+  names:
+    kind: Foo
+    plural: foos
+  scope: Namespaced
+  subresources:
+    status: {}
